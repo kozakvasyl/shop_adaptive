@@ -1,5 +1,6 @@
 # shop_adaptive
-It is my adaptive site. And it is my experience with gulp, sass
+
+***It is my adaptive site. And it is my experience with gulp, sass***
 
 
 - clone or dowload this project.
