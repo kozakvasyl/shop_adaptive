@@ -1,0 +1,39 @@
+
+.main-container {
+    .arrow-left {
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/left.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        &:hover {
+            transform:translateY(-3px);
+        }
+        display: none;
+        @media only screen and (max-width:375px) {
+            display: block;
+        }
+    }
+    .arrow-right {
+        @extend .arrow-left;
+        background-image: url("../img/right.png");
+        background-position-x: right;
+        &:hover {
+            transform:translateY(-3px);
+        }
+    }
+
+    @media only screen and (max-width:375px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .main-container-image {
+            display: none;
+        }
+        .visible {
+            display: flex;
+        }
+    }
+}

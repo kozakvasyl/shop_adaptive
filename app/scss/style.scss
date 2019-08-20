@@ -1,0 +1,26 @@
+@import 'header';
+@import 'varibles';
+@import 'main';
+@import 'galery';
+
+body {
+    background: #f6f6f6;
+    padding: 3% 10%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c303d;
+
+    @media only screen and (min-width:375px) and (max-width:768px) {
+        padding: 2% 5%;
+    }
+
+    @media only screen and (max-width:375px) {
+        padding: 3% 5%;
+    }
+}
+
+
+
+
